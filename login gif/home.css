@@ -1,0 +1,110 @@
+body {
+    position: relative;
+    width: 100vh;
+    min-height: 100vh;
+    background: url('Courier.gif');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background: rgba(222, 219, 211, 0.137);
+    backdrop-filter: blur(5.5px);
+    border-radius: 13px;
+    margin: auto;
+    align-items: center;
+}
+
+.titulo {
+    color: #c4adcc;
+    padding: 7px;
+    font-size: 35px;
+    margin: 30px;
+}
+
+.linha {
+    width: 380px;
+    margin-bottom: 40px;
+    border: 1px solid #3b0b0b65;
+}
+
+.nome {
+    background: rgba(82, 73, 73, 0.507);
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    width: 350px;
+    color: rgba(240, 248, 255, 0.795);
+}
+
+.senha {
+    background: rgba(82, 73, 73, 0.582);
+    border-radius: 15px;
+    border: none;
+    margin: 35px;
+    height: 40px;
+    width: 350px;
+    color: aliceblue;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(240, 248, 255, 0.699);
+    padding-left: 15px;
+}
+
+.butao-login {
+    width: 140px;
+    height: 42px;
+    background: rgba(71, 11, 11, 0.507);
+    border-radius: 15px;
+    border: none;
+    color: #dfd4d4;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.butao-login:hover {
+    transform: scale(1.1);
+    background: #570f0f;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.imagem {
+    width: 100%;
+}
+
+.sconta {
+    color: #f5c4c4ec;
+}
+
+.regis {
+    text-decoration: none;
+    color: rgb(214, 72, 72);
+    cursor: pointer;
+}
+
+.registro {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,44 @@
+@import url("styles/header.css");
+@import url("styles/doacao.css");
+@import url("styles/banner.css");
+@import url("styles/apoiadores.css");
+@import url("styles/oque-paq.css");
+@import url("styles/frentes.css");
+@import url("styles/unidades.css");
+@import url("styles/cases.css");
+@import url("styles/equipes.css");
+@import url("styles/apoiar.css");
+@import url("styles/contato.css");
+@import url("styles/bonde.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro-fundo: #201F2B;
+    --branco-azulado: #E1EDFF;
+    --cor-fonte-texto: #FBFCFD;
+    --cinza-padrao: #d9d9d925;
+}
+
+body {
+    background-color: var(--azul-escuro-fundo);
+    font-family: 'Inter', sans-serif;
+    color: var(--cor-fonte-texto);
+}
+
+footer {
+    text-align: center;
+    background: var(--branco-azulado);
+    color: rgba(0, 0, 0, 0.733);
+    padding: 1em;
+    font-size: 0.8em;
+}
+@media (max-width: 720px) {
+    footer {
+        font-size: 0.5em;
+    }
+}

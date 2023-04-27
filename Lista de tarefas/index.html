@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <section class="container-lista-de-tarefas">
+        <div class="menu">
+            <div class="menu-cabecalho">
+                <img src="img/logo.svg" alt="">
+                <h3>Lista de tarefas</h3>
+            </div>
+            <hr class="linha">
+            <ul class="menu-lista">
+                <li onclick="openPopup()" class="menu-lista-item">
+                    <img src="img/adicionar.svg" alt="">
+                    <p>Adicionar tarefa</p>
+                </li>
+                <li class="menu-lista-item">
+                    <img src="img/check.svg" alt="">
+                    <p>Todas as tarefas</p>
+                </li>
+                <li class="menu-lista-item">
+                    <img src="img/star.svg" alt="">
+                    <p>Favoritos</p>
+                </li>
+                <li class="menu-lista-item">
+                    <img src="img/prancheta.svg" alt="">
+                    <p>A fazer</p>
+                </li>
+                <li class="menu-lista-item log-out">
+                    <img src="img/log-out.svg" alt="">
+                    <p>Log Out</p>
+                </li>
+            </ul>
+            <div id="popup" class="popup">
+                <h2>Popup</h2>
+                <p>Insira um valor:</p>
+                <input type="text" id="inputValue">
+                <button onclick="getValue()">Enviar</button>
+                <button onclick="closePopup()">Fechar</button>
+             </div>
+
+        </div>
+
+        <div class="tarefas">
+            <input type="text" id="search-input" placeholder="Buscar..." />
+            <h2 class="tarefas-titulo">Todas as tarefas</h2>
+            <div id="filter">
+                <h4>Filtro</h4>
+                <select class="filtro-select" name="Filtrar" id="flitrar">
+                    <option value="valor1" selected>Todos</option>
+                    <option value="valor2">A fazer</option>
+                    <option value="valor3">Concluido</option>
+                </select>
+            </div>
+            <div class="tarefas-itens" id="container">
+                <div>
+                    <h3>poppskd</h3>
+                    <button>concluido</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

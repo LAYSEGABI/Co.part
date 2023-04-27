@@ -1,0 +1,71 @@
+.doacao-texto {
+    display: flex;
+    background: url('../img/back-paq.png');
+    padding: 4em 0 1em 0;
+    gap: 40px;
+    justify-content: center;
+}
+
+.doacao-texto-doar {
+    color: var(--cor-fonte-texto);
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.doacao-texto-pix {
+    color: rgb(255, 255, 255);
+}
+
+.typing-animation {
+    animation: blinkCursor 1s steps(40) infinite normal, 
+    typing 2.5s steps(24) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14.3em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .doacao-texto {
+        font-size: 0.7em;
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 630px) {
+    .doacao-texto {
+        font-size: 0.5em;
+        margin-top: 2em;
+        gap: 17px;
+    }
+}
+
+@media (max-width: 450px) {
+    .doacao-texto {
+        font-size: 0.73em;
+        margin-top: 0;
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

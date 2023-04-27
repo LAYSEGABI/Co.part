@@ -1,0 +1,607 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: url("imagens/lacas.jpg");
+    height: 909px;
+    width: 100%;
+    box-shadow: inset 0px -110px 70px 10px black;
+    
+}
+
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-prin {
+    margin: 30px;
+}
+
+.titulo-principal {
+    color: aliceblue;
+    font-size: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 120px;
+    font-weight: 200;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 13px;
+    border-radius: 7px;
+    margin-left: 800px;
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 90%;
+    font-family: sans-serif;
+
+}
+
+.menu-cont {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+    margin: 30px;
+    font-weight: 500;
+    transition: 1s;
+}
+
+.menu-cont:hover {
+    color: rgb(70, 151, 156);
+    transform: scale(1.08);
+}
+
+/*.........Main........*/
+
+main {
+    padding: 50px;
+}
+
+.rec-filmes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
+    max-width: 1370px;
+    width: 100%;
+    margin-left: 20px;
+    padding: 30px;
+}
+
+.tit-rec {
+    color: rgb(226, 217, 206);
+    font-size: 55px;
+    text-align: center;
+    font-weight: 200;
+    margin: 30px;
+}
+
+.tds-filmes {
+    margin-top: 40px;
+    background-color: rgba(238, 225, 225, 0.89);
+    border-radius: 30px;
+    justify-content: space-between;
+    margin-left: 33%;
+    width: 520px;
+    height: 80px;
+    font-size: 40px;
+    font-weight: 500;
+    transition: 1s;
+    color: rgb(75, 65, 65);
+}
+ 
+.tds-filmes:hover {
+    transform: scale(1.05);
+    background-color: rgb(165, 154, 154);
+    color: azure;
+}
+
+/*..........alice.........*/
+
+.alice-poster {
+    margin: 30px;
+    transition: 1s;
+    border-radius: 22px;
+}
+
+.alice-poster:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    z-index:1;
+    position: fixed;
+    top:0;
+    left:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out , opacity 0.25s ease-in-out, transform 0.25s ease-in-out;   
+}
+
+.modal-content {
+    background: linear-gradient(180deg, #530E0E 22%, rgba(5, 1, 1, 18.86) 80%);
+    border-radius: 20px;
+    padding: 16px 24px;
+    width: 1006px;
+    height: 700px;
+
+}
+
+.tit-foto {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tit-alice {
+    height: 168px;
+    width: 589px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.info-alice {
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.foto-alice {
+    height: 430px;
+    width: 370px;
+}
+
+.temp-alice {
+    font-size: 20px;
+    color: rgba(197, 197, 197, 0.87);
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: 46px;
+}
+
+.sinopse-alice {
+    font-size: 27px;
+    color: rgba(250, 235, 215, 0.925);
+    text-align: justify;
+    margin: 40px;
+}
+
+.atores-alice {
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.884);
+    margin-left: 46px;
+}
+
+.avaliacao-alice {
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 20px;
+    margin-left: 40px;
+    font-size: 27px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.assistir-alice {
+    background: #ffffff63;
+    width: 270px;
+    height: 55px;
+    border-radius: 27px;
+    font-size: 28px;
+    color: #110b0c;
+    margin-top: 14px;
+    margin-left: 30px;
+    font-weight: 700;
+    transition: 1s;
+}
+.assistir-alice:hover {
+    background-color: rgb(172, 180, 180);
+    transform: scale(1.08);
+}
+.span-1 {
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgba(109, 109, 103, 0.658);
+    text-align: center;
+    line-height: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 35px;
+}
+
+.span-1:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/*........Miranha........*/
+
+.miranha-poster {
+    margin: 30px;
+    transition: 1s;
+    border-radius: 22px;
+}
+
+.miranha-poster:hover {
+    transform: scale(1.1);
+}
+
+
+.modal-mira {
+    z-index:1;
+    position: fixed;
+    top:0;
+    left:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out , opacity 0.25s ease-in-out, transform 0.25s ease-in-out;   
+}
+
+.modal-content-mira {
+    background: linear-gradient(180deg, #530E0E 22%, rgba(5, 1, 1, 18.86) 80%);
+    border-radius: 20px;
+    padding: 16px 24px;
+    width: 1006px;
+    height: 700px;
+
+}
+
+.tit-foto-mira {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tit-mira {
+    height: 90px;
+    width: 589px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-mira {
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-info-mira {
+    display: flex;
+    flex-direction: row;
+}
+
+.foto-mira {
+    height: 430px;
+    width: 370px;
+}
+
+.temp-mira {
+    font-size: 20px;
+    color: rgba(197, 197, 197, 0.87);
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: 46px;
+}
+
+.sinopse-mira {
+    font-size: 27px;
+    color: rgba(250, 235, 215, 0.925);
+    text-align: justify;
+    margin: 40px;
+}
+
+.atores-mira {
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.884);
+    margin-left: 46px;
+}
+
+.avaliacao-mira {
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 20px;
+    margin-left: 40px;
+    font-size: 27px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.assistir-mira {
+    background: #ffffff63;
+    width: 270px;
+    height: 55px;
+    border-radius: 27px;
+    font-size: 28px;
+    color: #110b0c;
+    margin-top: -20px;
+    margin-left: 30px;
+    font-weight: 700;
+    transition: 1s;
+}
+.assistir-mira:hover {
+    background-color: rgb(185, 185, 176);
+    transform: scale(1.08);
+}
+.span-2 {
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgba(109, 109, 103, 0.658);
+    text-align: center;
+    line-height: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 35px;
+}
+
+.span-2:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.show-modal2 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/*.......Interestelar..........*/
+
+.inter-poster {
+    margin: 30px;
+    transition: 1s;
+}
+
+.inter-poster:hover {
+    transform: scale(1.1);
+}
+
+
+.modal-inter {
+    z-index:1;
+    position: fixed;
+    top:0;
+    left:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out , opacity 0.25s ease-in-out, transform 0.25s ease-in-out;   
+}
+
+.modal-content-inter {
+    background: linear-gradient(180deg, #530E0E 22%, rgba(5, 1, 1, 18.86) 80%);
+    border-radius: 20px;
+    padding: 16px 24px;
+    width: 1006px;
+    height: 700px;
+
+}
+
+.tit-foto-inter {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tit-inter {
+    height: 100px;
+    width: 589px;
+    margin-top: -10px;
+    margin-bottom: 35px;
+}
+
+.info-inter {
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-info-inter {
+    display: flex;
+    flex-direction: row;
+}
+
+.foto-inter {
+    height: 430px;
+    width: 370px;
+}
+
+.temp-inter {
+    font-size: 20px;
+    color: rgba(197, 197, 197, 0.87);
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: 46px;
+}
+
+.sinopse-inter {
+    font-size: 27px;
+    color: rgba(250, 235, 215, 0.925);
+    text-align: justify;
+    margin: 40px;
+}
+
+.atores-inter {
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.884);
+    margin-left: 46px;
+}
+
+.avaliacao-inter {
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 20px;
+    margin-left: 40px;
+    font-size: 27px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.assistir-inter {
+    background: #ffffff63;
+    width: 270px;
+    height: 55px;
+    border-radius: 27px;
+    font-size: 28px;
+    color: #110b0c;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-weight: 700;
+    transition: 1s;
+}
+.assistir-inter:hover {
+    transform: scale(1.08);
+    background-color: rgb(194, 194, 194);
+}
+
+.span-3 {
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgba(109, 109, 103, 0.658);
+    text-align: center;
+    line-height: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 35px;
+}
+
+.span-3:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.show-modal3 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+
+/*........Footer.........*/
+
+footer {
+    background-color: rgb(105, 6, 6);
+    margin-top: 90px;
+    width: 100%;
+}
+
+.sobre-mim {
+    color: rgba(240, 248, 255, 0.747);
+    font-size: 27px;
+    font-family: sans-serif;
+    padding: 35px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.git {
+    height: 58px;
+    width: 58px;
+    margin: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.git:hover {
+    background-color: beige;
+    transform: scale(1.09);
+}
+
+.insta {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.insta:hover {
+    background-color: beige;
+    transform: scale(1.09);
+}
+
+.linkedin {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.linkedin:hover {
+    background-color: beige;
+    transform: scale(1.09);
+}
+
+.sobre-redes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.redes-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-rodape {
+    margin-left: auto;
+    margin-right: 130px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 90%;
+}

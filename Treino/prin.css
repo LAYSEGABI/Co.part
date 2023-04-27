@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+p {
+    color: aliceblue;
+    padding: 30px;
+    background: palevioletred;
+    margin: 12px;
+}
+.teste-1 {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3) 1fr ;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+.teste-2 {
+    margin-top: 90px;
+}

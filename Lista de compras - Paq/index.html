@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="icon" type="image/png" href="imagens/icon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="img">
+        <img id="teia" src="imagens/teia.png" alt="teia">
+        <h1>Lista de compras</h1>
+    </div>
+    <div id="forma">
+        <p id="estrela">☆</p>
+        <p id="text">Inserir item na lista</p>
+    </div>
+
+    <div id="glb">
+        <input type="text" id="produto">
+        <button id="ad">Adicionar</button>
+    </div>
+    <div id="borda">
+        <div id="res"></div>
+        <div id="total">
+            <div id="ttl">Total</div>
+            <div id="tot">R$ 00,00</div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Layse gabrielly</p>
+    </footer>
+    <script>
+        let res = document.querySelector('#res')
+        let adc = document.querySelector('#ad')
+        adc.addEventListener('click', addProduto);
+        let valor = 0
+        let total = document.querySelector('#tot')
+        let produto = document.querySelector('#produto')
+        function addProduto() {
+            if (produto.value.length == 0) {
+                window.alert('Adicione algo antes de finalizar!')
+            } else {
+                let item = `<span > <br> <input type="checkbox" id="${produto.value}" onclick="check(${produto.value})">  ${produto.value}  </input>  <button id="${produto.value}-" onclick="clicar(${produto.value})">  x  </button></span>`;
+                res.innerHTML += item;
+                produto.value = ''
+            }
+        }
+        function check(parametro) {
+            console.log(parametro.checked)
+            if (parametro.checked == true) {
+                let digite = Number.parseFloat(window.prompt('digite o valor do item'))
+                valor += digite
+                console.log(valor)
+                total.innerText = `R$ ${valor}`
+            }
+        }
+        function clicar(ver) {
+            console.log(ver)
+            ver.parentElement.style.display = "none"
+        }
+        produto.addEventListener('keyup', function (e) {
+            if (e.keyCode === 13 || e.key === 'Enter') {
+                addProduto()
+            }
+        })
+    </script>
+</body>
+
+</html>

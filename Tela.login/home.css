@@ -1,0 +1,23 @@
+body {
+    background-image: url("imagens/fundo.jpg");
+    width: 100%;
+    background-size: cover;
+    opacity: 70%;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.719);
+    position: fixed;
+    align-items: center;
+
+}
+input {
+    color: aliceblue;
+    background-color: aliceblue;
+    margin: 30px;
+}
+.tit {
+    color: aliceblue;
+}

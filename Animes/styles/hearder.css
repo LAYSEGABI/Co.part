@@ -1,0 +1,128 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.cabecalho-menu__hamburguer {
+   width: 24px;
+   height: 24px;
+   background-image: url("../img/Menu.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   display: inline-block;
+   margin-left: 1.2em;
+
+}
+
+.cabecalho {
+   background-color: var(--azul-preto);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+}
+
+.container-imagem {
+   padding: 0.7em;
+   width: 3.5em;
+}
+
+.lista-menu {
+   display: none;
+   position: absolute;
+   top: 100%;
+   width: 60vW;
+}
+
+.container-botao:checked~.lista-menu {
+   display: block;
+}
+
+.lista-menu-titulo,
+.lista-menu-item {
+   padding: 0.5em;
+   background-color: var(--azul-cards);
+}
+
+.lista-menu-titulo {
+   color: var(--branco);
+   font-weight: 600;
+   background-color: var(--azul-fundo);
+}
+
+.lista-menu-link {
+   color: var(--branco);
+   -webkit-background-clip: text;
+   background-clip: text;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+.container-botao {
+   display: none;
+}
+
+.container-titulo {
+   display: none;
+}
+
+.github-header {
+   display: flex;
+   align-items: center;
+   margin-right: 1em;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.github-header-texto {
+   color: var(--texto-segundo);
+   font-size: 1.2em;
+   display: none;
+}
+
+.github-header:hover {
+   transform: scale(1.1);
+}
+
+
+@media screen and (min-widht: 1024px) {
+
+   .container-titulo,
+   .container-titulo__negrito {
+      font-family: var(--fonte-secundaria);
+      font-size: 30px;
+   }
+
+   .container-titulo {
+      display: block;
+   }
+
+
+}
+
+@media (min-width: 1728px) {
+   .container-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--preto);
+   }
+
+   .cabecalho {
+      padding: 0 2em;
+   }
+
+   .opcoes {
+      margin-right: auto;
+   }
+
+   .container-texto {
+      display: block;
+   }
+
+}

@@ -1,0 +1,187 @@
+.cabecalho {
+    display: flex;
+    background-color: var(--branco-azulado);
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.1em 5em;
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    top: 0;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.438);
+}
+
+.logo {
+    width: 3em;
+    margin-right: 1em;
+}
+
+.nav-lista {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-lista-item {
+    font-size: 0.75em;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-left: 2.5em;
+    transition: 0.4s;
+}
+
+.nav-lista-item:hover {
+    box-shadow: inset 0px -6px 0px 0px #1eb4e9;
+    color: #1EB4E9;
+    padding-bottom: 0.4em;
+}
+
+.butao-doar {
+    background-color: rgb(42, 119, 170);
+    color: aliceblue;
+    width: 10vw;
+    font-weight: 600;
+    font-size: 0.7em;
+    margin: 0.5em 3em;
+    border-radius: 10px;
+    border: solid 1px white;
+    padding: 1em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.butao-doar:hover {
+    background-color: #093546;
+    transform: scale(1.1);
+}
+
+.redes {
+    display: flex;
+   
+}
+
+.redes-link {
+    transition: 0.5s;
+}
+.redes-link:hover {
+    transform: scale(0.9);
+}
+
+.redes-item {
+    width: 2.4vw;
+    margin-left: 1em;
+}
+
+
+
+@media (max-width: 1200px) {
+    .butao-doar {
+        font-size: 0.7em;
+        width: 13vw;
+    }
+
+    .redes-item {
+        margin: 0.4em;
+        width: 1.7em;
+    }
+
+    .nav-lista-item-cases {
+        display: none;
+    }
+
+    .logo {
+        width: 2.6em;
+    }
+
+    .nav-lista-item {
+        margin-left: 1.2em;
+        font-size: 0.67em;
+    }
+}
+
+@media (max-width: 900px) {
+    .butao-doar {
+        padding: 1.4em;
+        font-size: 0.5em;
+    }
+
+    .cabecalho {
+        padding: 0 5em;
+    }
+
+    .logo {
+        width: 4vw;
+    }
+
+    .nav-lista-item-frentes {
+        display: none;
+    }
+
+    .redes-item {
+        width: 3.2vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .butao-doar {
+        width: 15vw;
+        margin: 1em;
+        font-size: 0.4em;
+    }
+
+    .nav-lista-item {
+        font-size: 0.55em;
+    }
+
+    .nav-lista-item-equipe,
+    .nav-lista-item-inicio {
+        display: none;
+    }
+
+    .redes-item {
+        width: 1.3em;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .nav-lista-item-apoiadores,
+    .nav-lista-item-unidades {
+        display: none;
+    }
+
+    .butao-doar {
+        width: 20vw;
+        margin: 0 2em;
+    }
+
+    .nav-lista-item {
+        font-size: 0.6em;
+    }
+
+    .logo {
+        width: 2em;
+        margin-right: 0.5em;
+    }
+
+    .cabecalho {
+        padding: 0 3em;
+    }
+
+    .redes {
+        margin: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .redes {
+        display: none;
+    }
+
+    .butao-doar {
+        margin: 0.7em 1em;
+        width: 12em;
+    }
+}

@@ -1,0 +1,28 @@
+@import url("styles/hearder.css");
+@import url("styles/banner.css");
+@import url("styles/carrosel.css");
+@import url("styles/topicos.css");
+@import url("styles/footer.css");
+
+:root {
+    --azul-preto: #191825;
+    --azul-fundo: #041C32;
+    --azul-cards: #064663;
+    --verde-topicos: #4BA39D;
+    --hover-botao: #041c32a9;
+    --texto-segundo: #B7C5C5;
+    --cor-de-fundo: #dadada;
+    --branco: #f6f6f6;
+    --laranja: #eb9b00;
+    --fonte-principal: "Poppins";
+    --azul: #002f52;
+    --fonte-secundaria: "Josefin Sans";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    
+}

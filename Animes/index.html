@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="shortcut icon" href="img/estrela.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>ListaDeAnimes</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container-botao">
+            <label for="menu" class="opcoes">
+                <span class="cabecalho-menu__hamburguer  container-imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-titulo">Categorias</li>
+                <li class="lista-menu-item">
+                    <a href="#favoritos-red" class="lista-menu-link">Favoritos</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#assistidos-red" class="lista-menu-link">Ùltimos assistidos</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="container">
+            <a href="https://github.com/LAYSEGABI" class="github-header"><img src="img/github-header.png"
+                    alt="Meu perfil" class="container-imagem">
+                <p class="github-header-texto">Github</p>
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner-titulo">Minha lista de animes</h2>
+        <p class="banner-texto">Todos meus animes vistos e em andamento organizados nesse site criado por mim!</p>
+    </section>
+
+    <section id="assistidos-red" class="carrosel">
+        <h2 class="carrosel-titulo">Últimos Assistidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- pagination -->
+
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <a class="swiper-slide " href="https://www.netflix.com/br/title/81492822">
+                    <img class="poster-anime" src="img/posters/belle-movie-poster-1000781259 1.png">
+                </a>
+                <a class="swiper-slide" href="https://www.netflix.com/br/title/80020759?source=35">
+                    <img src="img/posters/zankyo-no-terror.png" alt="">
+                </a>
+                <a class="swiper-slide" href="https://www.netflix.com/br/title/80161848">
+                    <img src="img/posters/a.i.c.o.png" alt="">
+                </a>
+                <a class="swiper-slide" href="https://www.netflix.com/br/title/81281872">
+                    <img src="img/posters/olhosdegato.png" alt="">
+                </a>
+                <a class="swiper-slide" href="https://www.crunchyroll.com/pt-br/watch/G6Q49X99R/the-end--the-beginning">
+                    <img src="img/posters/Haikui.png" alt="">
+                </a>
+                <a class="swiper-slide" href="https://www.netflix.com/br/title/80036398?source=35">
+                    <img src="img/posters/as-memorias-de-marie.png" alt="">
+                </a>
+                <a class="swiper-slide" href="https://www.netflix.com/br/title/70216227?source=35">
+                    <img src="img/posters/pequeninos.png" alt="">
+                </a>
+
+
+            </div>
+
+
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card-naruto card-geral">
+                <div class="card-descricao">
+                    <div class="descricao">
+                        <h3 class="descricao-titulo">Assistindo...</h3>
+                        <h2 class="descricao-titulo-livro">Naruto Shippuden</h2>
+                        <p class="descricao-texto">Tenho um carinho especial por ser um dos meus primeiros animes.</p>
+                        <a href="https://www.crunchyroll.com/pt-br/watch/GRWEX4QMR/homecoming"
+                            class="botoes-ancora">Assista</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-demon card-geral">
+                <div class="card-descricao">
+                    <div class="descricao">
+                        <h3 class="descricao-titulo">Favorito da vida</h3>
+                        <h2 class="descricao-titulo-livro">Demon Slayer</h2>
+                        <p class="descricao-texto">Se tem um defeito nesse anime eu desconheço completamente.</p>
+                        <a href="https://www.crunchyroll.com/pt-br/watch/G14U4X75J/cruelty"
+                            class="botoes-ancora">Assista</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="favoritos-red" class="carrosel">
+        <h2 class="carrosel-titulo">Meus favoritos</h2>
+
+        <div class="posters-geral">
+            <div class="section-primeira">
+                <section class="poster-item">
+                    <img src="img/posters/demon-slayer.svg" alt="" class="poster-img">
+                    <section class="poster-texto">
+                        <h2>Boku no hero</h2>
+                        <p> Ficção de aventura, História de super-herói e Comédia</p>
+                        <a href="https://www.crunchyroll.com/pt-br/watch/G14U4X75J/cruelty"><button
+                                class="poster-butao">Assista</button></a>
+                    </section>
+                </section>
+                <section class="poster-item">
+                    <img src="img/posters/jujutso-kaisen.png" alt="" class="poster-img">
+                    <section class="poster-texto">
+                        <h2>Jujutso kaisen</h2>
+                        <p> Fantasia sombria e Ficção supernatural</p>
+                        <a href="https://www.crunchyroll.com/pt-br/watch/GVWU0VNM3/ryoumen-sukuna"><button
+                                class="poster-butao">Assista</button></a>
+                    </section>
+                </section>
+            </div>
+            <div class="section-segunda">
+                <section class="poster-item">
+                    <img src="img/posters/one-punch-man.png" alt="" class="poster-img">
+                    <section class="poster-texto">
+                        <h2>One punch man</h2>
+                        <p>Ação, Comédia e Superhero comics</p>
+                        <a href="https://www.netflix.com/br/title/80117291"><button
+                                class="poster-butao">Assista</button></a>
+                    </section>
+                </section>
+                <section class="poster-item">
+                    <img src="img/posters/your-name.png" alt="" class="poster-img">
+                    <section class="poster-texto">
+                        <h2>Your name</h2>
+                        <p>Romance, Aventura, Drama e Fantasia</p>
+                        <a
+                            href="https://play.hbomax.com/page/urn:hbo:page:GYIjjJwrPnZGxLwEAAANC:type:feature?source=googleHBOMAX&action=open"><button
+                                class="poster-butao">Assista</button></a>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card-pequeninos card-geral">
+                <div class="card-descricao">
+                    <div class="descricao">
+                        <h3 class="descricao-titulo">Studio Ghibli</h3>
+                        <h2 class="descricao-titulo-livro">O mundo dos pequeninos</h2>
+                        <p class="descricao-texto">Meu favorito do studio ghibli, dá vontade de morar no mundo deles.
+                        </p>
+                        <a href="https://www.netflix.com/br/title/70216227?source=35" class="botoes-ancora">Assista</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-geral">
+                <div class="card-descricao">
+                    <div class="descricao">
+                        <h3 class="descricao-titulo">Mappa</h3>
+                        <h2 class="descricao-titulo-livro">Attack on titan</h2>
+                        <p class="descricao-texto">Gosto muito do estilo de animação e como a história é contada.</p>
+                        <a href="https://www.crunchyroll.com/pt-br/watch/GR49GM4W6/to-you-2000-years-in-the-future--the-fall-of-zhiganshina-1"
+                            class="botoes-ancora">Assista</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos-titulo">CATEGORIAS FAVORITAS</h2>
+        <ul class="topicos-lista">
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Romance</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Shounem</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Mistério</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Policial</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Ficção ciêntifica</a>
+            </li>
+
+        </ul>
+    </section>
+
+    <hr />
+    <footer class="rodape">
+        <div class="contato">
+            <h2 class="contato-titulo">Gostou do site? Acompanhe meus outros trabalhos!</h2>
+            <div class="redes">
+                <a class="redes-item" href="https://github.com/LAYSEGABI"><img class="redes-item-logo"
+                        src="img/Github.png" alt="">Github</a>
+                <a class="redes-item" href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/"><img
+                        class="redes-item-logo" src="img/Linkedin.png" alt="">LinkedIn</a>
+            </div>
+        </div>
+        <h2 class="rodape-titulo">©Layse gabrielly</h2>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 10,
+            slidesPerView: 2.5,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+
+</body>
+
+</html>

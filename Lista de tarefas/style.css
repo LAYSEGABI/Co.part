@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(98, 101, 104);
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-lista-de-tarefas {
+    display: flex;
+}
+
+.menu {
+    background-color: #121021;
+    border-radius: 0px 20px 20px 0px;
+    height: 100vh;
+}
+
+.linha {
+    margin: 1em 0;
+}
+.menu-cabecalho {
+    display: flex;
+    padding: 2em;
+    gap: 20px;
+}
+
+.menu-lista-item {
+    display: flex;
+    padding: 1.5em 2em;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.log-out {
+    position: relative;
+    bottom: 0;
+}
+
+.tarefas {
+    padding: 3em;
+}
+
+.tarefas-titulo {
+    color: #121021;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+ }

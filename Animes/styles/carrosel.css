@@ -1,0 +1,334 @@
+.carrosel-titulo {
+    color: var(--branco);
+    background-color: var(--azul-fundo);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+    margin: 1em;
+}
+
+.swiper-slide {
+    transition: 0.5s;
+}
+
+.swiper-slide:hover {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+.swiper {
+    background-color: var(--azul-preto);
+    padding-left: 1em;
+    margin-bottom: 1em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.carrosel {
+    background: var(--azul-preto);
+    padding-bottom: 1em;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+    color: rgba(240, 248, 255, 0.342);
+}
+
+.swiper-button-next {
+    margin-left: 15em;
+}
+
+
+.card-descricao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.644);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+
+.card-botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+    list-style-type: none;
+}
+
+.card-pequeninos {
+    background: url('../img/gifpequeninos.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 93vw;
+    margin: 0 2em 0 1em;
+    flex-wrap: nowrap;
+
+}
+
+.card-naruto {
+    background: url('../img/gifnaruto.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 93vw;
+    margin: 0 2em 0 1em;
+    flex-wrap: nowrap;
+}
+
+.card-demon {
+    background: url('../img/gif-demon-slayer.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 93vw;
+    margin: 0 2em 0 1em;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background: url('../img/Eren\ Founding.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 93vw;
+    margin: 0 2em 0 1em;
+    flex-wrap: nowrap;
+}
+
+.descricao-titulo {
+    color: var(--texto-segundo);
+    font-weight: 700;
+}
+
+.descricao {
+    padding: 1.2em 0;
+    text-align: center;
+    margin: auto;
+}
+
+.descricao-titulo-livro {
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.card-geral {
+    margin: 1em 2em;
+}
+
+.descricao-texto {
+    font-size: 14px;
+    margin: 1em 0 3em 0;
+    color: aliceblue;
+}
+
+.botoes-ancora {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0.7em 2.4em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.botoes-ancora:hover {
+    background: var(--hover-botao);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.4em;
+}
+
+
+/* Hover posters */
+
+
+
+.posters-geral {
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+
+.poster-item {
+    width: 40vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.6em;
+    margin-bottom: 1em;
+}
+
+.poster-img {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.poster-texto h2 {
+    font-size: 1.8em;
+    margin: 1em 0;
+}
+
+.poster-texto p {
+    font-size: 1em;
+    margin-bottom: 3em;
+}
+
+.poster-texto {
+    position: absolute;
+    font-size: 1em;
+    padding: 1em;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    padding-top: 3em;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.poster-item:hover .poster-texto {
+    opacity: 1;
+}
+
+.poster-item:hover .poster-img {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.poster-butao {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 7px ;
+    background: rgba(3, 24, 92, 0.582);
+    color: #fff0f0e0;
+    padding: 0.4em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.poster-butao:hover {
+    background-color: rgba(51, 91, 165, 0.445);
+}
+
+.poster-texto {
+    display: none;
+}
+
+
+@media (min-width: 770px) {
+
+    .swiper {
+        width: 60vw;
+        padding: 0 18em 0 0;
+        margin-top: 1em;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+
+    .carrosel-titulo {
+        font-size: 1.5em;
+    }
+
+    .card {
+        height: 30%;
+        margin: 2em;
+    }
+
+    .card-pequeninos {
+        height: 30%;
+        margin: 2em;
+    }
+
+    .card-descricao {
+        height: 30%;
+    }
+
+    .descricao-titulo-livro {
+        font-size: 2em;
+    }
+
+    .descricao-texto {
+        font-size: 1.4em;
+        margin: 0 0 2em 0;
+    }
+
+    .descricao {
+        margin-bottom: 2em;
+    }
+
+    .card-descricao {
+        flex-direction: column;
+    }
+
+    .section-primeira,
+    .section-segunda {
+        display: flex;
+    }
+
+    .posters-geral {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .poster-item {
+        width: 21vw;
+        margin: 1em 0.8em;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+    .poster-texto {
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 1524px) {}

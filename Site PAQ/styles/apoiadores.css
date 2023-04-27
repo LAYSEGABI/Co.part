@@ -1,0 +1,169 @@
+.apoiadores {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.apoiadores-titulo {
+    color: var(--cor-fonte-texto);
+    font-size: 2em;
+    margin: 1em 0 0.2em 0;
+}
+
+.apoiadores-texto {
+    color: var(--cor-fonte-texto);
+    margin-bottom: 1.5em;
+}
+
+.apoiadores-logo-empresas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.apoiadores-logo-empresas-l1,
+.apoiadores-logo-empresas-l2,
+.apoiadores-logo-empresas-l3 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.apoiadores-logo-empresas-item {
+    display: flex;
+    justify-content: center;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    background: rgba(216, 216, 216, 0.97);
+    border: 1px solid #CCCFEB;
+    box-shadow: 19px 25px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.apoiadores-logo-empresas-item:hover {
+    background: rgb(255, 255, 255);
+    transform: scale(1.16);
+}
+
+.apoiadores-logo-empresas-item img {
+    object-fit: cover;
+    width: 80%;
+}
+
+.apoiadores-invista-texto {
+    color: var(--cor-fonte-texto);
+    font-size: 1.7em;
+    margin: 1em;
+}
+
+.apoiadores-invista-botao {
+    background: rgba(92, 196, 255, 0.2);
+    border: 1px solid #1EBBDD;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    color: var(--cor-fonte-texto);
+    padding: 0.8em 3em;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 2.4em;
+    transition: 0.5s;
+}
+
+.apoiadores-invista-botao:hover {
+    background: rgba(92, 195, 255, 0.418);
+    border: 1px solid rgb(22, 44, 85);
+}
+
+@media (max-width: 1200px) {
+    .apoiadores-logo-empresas {
+        gap: 15px;
+    }
+    .apoiadores-logo-empresas-l1,
+    .apoiadores-logo-empresas-l2,
+    .apoiadores-logo-empresas-l3 {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .apoiadores-logo-empresas {
+        gap: 15px;
+    }
+    .apoiadores-logo-empresas-l1,
+    .apoiadores-logo-empresas-l2,
+    .apoiadores-logo-empresas-l3 {
+        gap: 15px;
+    }
+    .apoiadores {
+        margin: 0;
+    }
+    .apoiadores-invista-texto {
+        font-size: 1.3em;
+    }
+    .apoiadores {
+        padding-top: 30px;
+    }
+    .apoiadores-titulo {
+        font-size: 1.5em;
+    }
+    .apoiadores-invista-botao {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 640px) {
+    .apoiadores-logo-empresas-l1,
+    .apoiadores-logo-empresas-l2,
+    .apoiadores-logo-empresas-l3 {
+        gap: 10px;
+    }
+
+    .apoiadores-logo-empresas-item {
+        border-radius: 10px;
+        background-color: #f3f4f8;
+    }
+    .apoiadores-invista-texto {
+        font-size: 1em;
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    .apoiadores-logo-empresas-l1,
+    .apoiadores-logo-empresas-l2,
+    .apoiadores-logo-empresas-l3 {
+        gap: 5px;
+    }
+
+    .apoiadores-logo-empresas-item {
+        border-radius: 8px;
+    }
+    .apoiadores-logo-empresas-item {
+        width: 2em;
+        height: 2em;
+    }
+    
+}
+
+
+@media (max-width: 390px) {
+    .apoiadores-logo-empresas {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .apoiadores-logo-empresas-l1,
+    .apoiadores-logo-empresas-l2,
+    .apoiadores-logo-empresas-l3 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .apoiadores-logo-empresas-item {
+        width: 4em;
+        height: 4em;
+    }
+}

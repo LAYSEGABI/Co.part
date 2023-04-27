@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="imagens/star.png" type="image/x-icon">
+    <title>Avaliação de Filmes</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecario">
+            <img class="logo-prin" src="imagens/logo.png" alt="Logo">
+            <div class="menu">
+                <a class="menu-cont" href="filmes.html">Filmes</a>
+                <a class="menu-cont" href="series.html">Series</a>
+                <a class="menu-cont" href="favoritos.html">Favoritos</a>
+            </div>
+        </div>
+        <h1 class="titulo-principal">Avaliações de filmes e séries</h1>
+    </header>
+
+    <main>
+        <h1 class="tit-rec">Recomendados</h1>
+        <div class="rec-filmes">
+
+            <!--.........Alice.......-->
+            <img onclick="showModal()" class="alice-poster" src="imagens/aliceinboderland.png" alt="">
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <div class="tit-exit">
+                        <img class="tit-alice" src="imagens/net.png" alt="">
+                        <span class="span-1" onclick="hideModal()">&times;</span>
+                    </div>
+                    <div class="ft-info">
+                        <img class="foto-alice" src="imagens/aliceinboderland.png" alt="Alice in boderland">
+                        <div class="info-alice">
+                            <p class="temp-alice">2020 | Classificação etária:16 | 2 temporadas | Suspense para TV</p>
+                            <p class="sinopse-alice">Um gamer e dois amigos são transportados para uma versão paralela
+                                de
+                                Tóquio, onde precisam participar de diversos jogos mortais caso queiram sobreviver.</p>
+                            <p class="atores-alice">Estrelando:Kento Yamazaki,Tao Tsuchiya,Nijiro Murakami</p>
+                            <p class="avaliacao-alice">Segundo dorama que eu assisti, amo assistir esse estilo meio jogos mortais. O jeito que a história entrelaça e deixa os personagens e a gnt sem saber oq vai rolar, fora os plosts que são absurdos de bons. Tudo ótimo.</p>
+                        </div>
+                    </div>
+                    <a href="https://www.netflix.com/br/title/80200575?source=35"><button
+                            class="assistir-alice">Assistir</button></a>
+                </div>
+            </div>
+
+            <!--........Miranha........-->
+            <img onclick="showModal2()" class="miranha-poster" src="imagens/miranha.png" alt="">
+            <div class="modal-mira" id="modal-mira">
+                <div class="modal-content-mira">
+                    <div class="tit-exit-mira">
+                        <img class="tit-mira" src="imagens/logomiranha.png" alt="">
+                        <span class="span-2" onclick="hideModal2()">&times;</span>
+                    </div>
+                    <div class="ft-info-mira">
+                        <img class="foto-mira" src="imagens/miranha.png" alt="Homem aranha">
+                        <div class="info-mira">
+                            <p class="temp-mira">2021 | Classificação etária:12 | 2h 37m | Ação/Aventura </p>
+                            <p class="sinopse-mira">Peter Parker tem a sua identidade secreta revelada e pede ajuda ao
+                                Doutor Estranho. Quando um feitiço para reverter o evento não sai como o esperado, o
+                                Homem-Aranha e seu companheiro dos Vingadores precisam enfrentar inimigos de todo o
+                                multiverso.</p>
+                            <p class="atores-mira">Estrelando:Tom Holland, Zendaya, Tom Benedicth</p>
+                            <p class="avaliacao-mira">Surreal como o filme conseguiu trazer personagens tão fortes e
+                                ainda sim manter o protagonismo no tom, ainda mostrando referências dos outros filmes.
+                                amei dms, um dos meus filmes favoritos da Marvel.</p>
+                        </div>
+                    </div>
+                    <a
+                        href="https://play.hbomax.com/page/urn:hbo:page:GYqeASQeezEo8igEAAACK:type:feature?source=googleHBOMAX&action=open"><button
+                            class="assistir-mira">Assistir</button></a>
+                </div>
+            </div>
+
+
+            <!--........Interestelar....-->
+            <img onclick="showModal3()" class="inter-poster" src="imagens/interestelar.png" alt="">
+            <div class="modal-inter" id="modal-inter">
+                <div class="modal-content-inter">
+                    <div class="tit-exit-inter">
+                        <img class="tit-inter" src="imagens/logointer.png" alt="">
+                        <span class="span-3" onclick="hideModal3()">&times;</span>
+                    </div>
+                    <div class="ft-info-inter">
+                        <img class="foto-inter" src="imagens/inter.png" alt="Interestelar">
+                        <div class="info-inter">
+                            <p class="temp-inter">2014 | Classificação etária:10 | 2h 49m | Ficção científica/Aventura
+                            </p>
+                            <p class="sinopse-inter">As reservas naturais da Terra estão chegando ao fim e um grupo de
+                                astronautas recebe a missão de verificar possíveis planetas para receberem a população
+                                mundial, possibilitando a continuação da espécie.</p>
+                            <p class="atores-inter">Estrelando: Matthew Mcconaughey, Anne Hathaway, Jessica chastain</p>
+                            <p class="avaliacao-inter">Pra quem é apaixonado em astronomia ou não, esse filme é
+                                perfeito. Todo o visual, a história e como ilustra perfeitamente algumas teorias
+                                ciêntificas, é uma obra de arte.</p>
+                        </div>
+                    </div>
+                    <a
+                        href="https://play.hbomax.com/page/urn:hbo:page:GYGP7pwQv_ojDXAEAAAFc:type:feature?source=googleHBOMAX&action=open"><button
+                            class="assistir-inter">Assistir</button></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="filmes.html"><button class="tds-filmes"> Todos os filmes </button></a>
+    </main>
+
+    <footer>
+        <div class="redes-logo">
+            <div class="sobre-redes">
+                <h2 class="sobre-mim">Sobre mim</h2>
+                <div class="redes">
+                    <a href=""><img class="git" src="imagens/github.png" alt="Git Hub"></a>
+                    <a href=""><img class="linkedin" src="imagens/linkedin.png" alt="Linkedin"></a>
+                    <a href=""><img class="insta" src="imagens/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <img class="logo-rodape" src="imagens/logo.png" alt="Logo">
+        </div>
+    </footer>
+
+    <script>
+        function showModal() {
+            var element = document.getElementById("modal");
+            element.classList.add("show-modal");
+        }
+
+        function hideModal() {
+            var element = document.getElementById("modal")
+            element.classList.remove("show-modal")
+        }
+
+        function showModal2() {
+            var element = document.getElementById("modal-mira");
+            element.classList.add("show-modal2");
+        }
+
+        function hideModal2() {
+            var element = document.getElementById("modal-mira")
+            element.classList.remove("show-modal2")
+        }
+
+        function showModal3() {
+            var element = document.getElementById("modal-inter");
+            element.classList.add("show-modal3");
+        }
+
+        function hideModal3() {
+            var element = document.getElementById("modal-inter")
+            element.classList.remove("show-modal3")
+        }
+    </script>
+</body>
+
+</html>

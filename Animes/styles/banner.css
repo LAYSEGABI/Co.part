@@ -1,0 +1,71 @@
+.banner {
+    background: url("../img/GIF\ from\ GIFER.gif");
+    color: var(--branco);
+    text-align: center;
+    padding: 2em 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-titulo {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: var(--cor-de-fundo);
+}
+
+.banner-texto {
+    color: var(--cor-de-fundo);
+    font-weight: 500;
+    margin: 1em 0;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+
+
+@media (min-width: 700px)
+ {
+    .banner {
+        padding: 5em;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .banner-titulo {
+        font-size: 2em;
+    }
+
+    .banner-texto {
+        font-size: 1.5em;
+    }
+    .github-header-texto {
+        display: block;
+    }
+}
+
+
+
+@media (min-width: 1024px) 
+{
+    .banner {
+        padding: 10em;
+    }
+
+    .banner-titulo {
+        font-size: 4em;
+    }
+
+    .banner-texto {
+        font-size: 2em;
+    }
+    
+}
+
+
+
+@media (min-width: 1524px)
+{
+    .banner {
+        padding: 14em;
+    }
+}

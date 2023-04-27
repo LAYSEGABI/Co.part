@@ -1,0 +1,112 @@
+.bonde-dos-parcas {
+    background: url("../img/back-bonde-dos-parcas.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bonde-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    align-items: center;
+}
+
+.bonde-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1em;
+    align-items: center;
+    text-align: justify;
+    width: 40vw;
+    gap: 15px;
+    text-align: center;
+}
+
+.bonde-butao {
+    padding: 1em 4em;
+    background-color: rgba(22, 123, 170, 0.514);
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    border-radius: 10px;
+    margin: 1em;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700; 
+    color: var(--cor-fonte-texto);
+}
+
+.bonde-butao:hover {
+    background-color: rgba(182, 102, 28, 0.829);
+    transform: scale(1.08);
+    border: rgba(255, 255, 255, 0.171);
+}
+.bonde-video {
+    width: 570px;
+    height: 315px;
+    
+}
+iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+    .bonde-video {
+        width: 470px;
+        height: 265px;
+    }
+
+    .bonde-container {
+        padding: 2em;
+    }
+
+    .bonde-descricao {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 950px) {
+    .bonde-video {
+        width: 360px;
+        height: 200px;
+    }
+
+    .bonde-container {
+        padding: 1.5em;
+    }
+
+    .bonde-descricao {
+        font-size: 0.68em;
+    }
+    
+}
+
+@media (max-width: 740px) {
+    .bonde-video {
+        width: 360px;
+        height: 200px;
+    }
+
+    .bonde-container {
+        flex-direction: column;
+    }
+
+    .bonde-descricao {
+        font-size: 0.68em;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .bonde-video {
+        width: 260px;
+        height: 145px;
+        margin-top: 1em;
+    }
+
+}
