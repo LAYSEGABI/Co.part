@@ -1,0 +1,296 @@
+.carrosel-titulo {
+    color: black;
+    background-color: rgb(214, 126, 11);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.7em 0;
+}
+
+img {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-slide {
+    transition: 0.5s;
+}
+
+.card-produto {
+    background: rgba(64, 64, 64, 0.33);
+    border: 1px solid #FFFAFA;
+    border-radius: 20px;
+    padding: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: middle;
+    margin: 1.5em 1em;
+}
+
+.card-preco {
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 0.2em;
+}
+
+.card-descricao-produto {
+    color: rgb(214, 214, 214);
+    font-weight: 400;
+    font-size: 0.75em;
+}
+
+
+.card-butao button {
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.3em;
+
+}
+
+.cards-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-produto-item {
+    background: rgba(64, 64, 64, 0.33);
+    border: 1px solid #FFFAFA;
+    border-radius: 20px;
+    padding: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: middle;
+    margin: 0.8em;
+    flex-basis: calc(34.33%);
+}
+
+.card-butao {
+    background: #d34a0b;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 0.4em;
+    transition: 0.5s;
+}
+
+.card-butao:hover {
+    background-color: #a33a09;
+}
+
+.swiper {
+    background-color: var(--azul-preto);
+    padding-left: 1em;
+    margin-bottom: 1em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.carrosel {
+    background: var(--azul-preto);
+    padding-bottom: 1em;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+    color: rgba(240, 248, 255, 0.342);
+}
+
+.swiper-button-next {
+    margin-left: 15em;
+}
+
+
+.card-descricao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.644);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+
+.card-botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+    list-style-type: none;
+}
+
+
+.descricao-titulo {
+    color: var(--texto-segundo);
+    font-weight: 700;
+}
+
+.descricao {
+    padding: 1.2em 0;
+    text-align: center;
+    margin: auto;
+}
+
+.descricao-titulo-livro {
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.card-geral {
+    margin: 1em 2em;
+}
+
+.descricao-texto {
+    font-size: 14px;
+    margin: 1em 0 3em 0;
+    color: aliceblue;
+}
+
+.botoes-ancora {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0.7em 2.4em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.botoes-ancora:hover {
+    background: var(--hover-botao);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.4em;
+}
+.swiper-slide-active {
+    width: 30vw;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+
+    .card-produto {
+        width: 30vw;
+    }
+    .card-produto-item {
+        flex-basis: calc(25.33%);
+    }
+    .swiper {
+        width: 60vw;
+        padding: 0 18em 0 0;
+        margin-top: 1em;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+
+    .carrosel-titulo {
+        font-size: 1.5em;
+    }
+
+    .card {
+        height: 30%;
+        margin: 2em;
+    }
+
+    .card-pequeninos {
+        height: 30%;
+        margin: 2em;
+    }
+
+    .card-descricao {
+        height: 30%;
+    }
+
+    .descricao-titulo-livro {
+        font-size: 2em;
+    }
+
+    .descricao-texto {
+        font-size: 1.4em;
+        margin: 0 0 2em 0;
+    }
+
+    .descricao {
+        margin-bottom: 2em;
+    }
+
+    .card-descricao {
+        flex-direction: column;
+    }
+
+    .section-primeira,
+    .section-segunda {
+        display: flex;
+    }
+
+    .posters-geral {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .poster-item {
+        width: 21vw;
+        margin: 1em 0.8em;
+    }
+
+}
+
+
+@media (min-width: 1100px) {
+
+    
+    .card-item {
+        margin: 2em;
+    }
+    .card-produto-item {
+        flex-basis: calc(12.33%);
+        margin: 0.2em;
+    }
+    
+
+}
+
+
+@media (min-width: 1524px) {}

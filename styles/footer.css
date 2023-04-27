@@ -1,0 +1,17 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--azul-preto);
+    padding: 1em;
+    color: var(--branco);
+    text-align: center;
+
+}
+
+.rodape-titulo {
+    font-weight: 400;
+    font-size: 16px;
+}
+

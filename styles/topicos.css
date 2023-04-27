@@ -1,0 +1,17 @@
+.topicos {
+    background: var(--azul-fundo);
+    text-align: center;
+    padding: 1em 0;
+    align-items: center;
+}
+
+.topicos-titulo {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+
+

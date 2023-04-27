@@ -1,0 +1,116 @@
+.banner {
+    background: linear-gradient(200.26deg, #1C6086 -2.23%, #112b42 26.35%, #031d36 67.92%);
+    color: var(--branco);
+    text-align: center;
+    padding: 2em 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-titulo {
+   font-size: 2em;
+   color: aliceblue;
+   font-family: 'Archivo', sans-serif;
+}
+
+.banner-img {
+    width: 60vw;
+}
+.banner-texto {
+    color: var(--cor-de-fundo);
+    font-weight: 500;
+    margin: 1em 0;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+img {
+    width: 100%;
+}
+
+.typing-animation {
+    animation: blinkCursor 1s steps(40) infinite normal, 
+    typing 2.5s steps(24) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14.3em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+@media (min-width: 700px)
+ {
+    .banner {
+        padding: 5em;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-direction: row;
+    }
+    .banner-img {
+        width: 100vw;
+    }
+
+    .banner-titulo {
+        font-size: 3em;
+    }
+
+    .banner-texto {
+        font-size: 1.5em;
+    }
+    .github-header-texto {
+        display: block;
+    }
+}
+
+
+
+@media (min-width: 1024px) 
+{
+    .banner {
+        padding: 5em;
+    }
+
+    .banner-titulo {
+        font-size: 4em;
+    }
+
+    .banner-texto {
+        font-size: 2em;
+    }
+    
+}
+
+
+@media (min-width: 1224px)
+{
+    .banner-titulo {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1524px)
+{
+    .banner {
+        padding: 14em;
+    }
+}
