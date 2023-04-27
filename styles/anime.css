@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul-preto: #191825;
+    --azul-fundo: #041C32;
+    --azul-cards: #064663;
+    --verde-topicos: #4BA39D;
+    --hover-botao: #041c32a9;
+    --texto-segundo: #B7C5C5;
+    --cor-de-fundo: #dadada;
+    --branco: #f6f6f6;
+    --laranja: #eb9b00;
+    --fonte-principal: "Poppins";
+    --azul: #002f52;
+    --fonte-secundaria: "Josefin Sans";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+
+.cabecalho-menu__hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-left: 1.2em;
+
+}
+
+.cabecalho {
+    background-color: var(--azul-preto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container-imagem {
+    padding: 0.7em;
+    width: 3.5em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vW;
+}
+
+.container-botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu-titulo,
+.lista-menu-item {
+    padding: 0.5em;
+    background-color: var(--azul-cards);
+}
+
+.lista-menu-titulo {
+    color: var(--branco);
+    font-weight: 600;
+    background-color: var(--azul-fundo);
+}
+
+.lista-menu-link {
+    color: var(--branco);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container-botao {
+    display: none;
+}
+
+.container-titulo {
+    display: none;
+}
+
+.github-header {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    text-decoration: none;
+    transition: 0.5s;
+ }
+ 
+ .github-header-texto {
+    color: var(--texto-segundo);
+    font-size: 1.2em;
+    display: none;
+ }
+ 
+ .github-header:hover {
+    transform: scale(1.1);
+ }
+ 
+
+ @media (min-width: 1024px) {
+
+    .container-titulo,
+    .container-titulo__negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container-titulo {
+        display: block;
+    }
+
+    .github-header-texto {
+        display: block;
+    }
+
+
+}
+
+@media (min-width: 1728px) {
+    .container-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container-texto {
+        display: block;
+    }
+
+}
+
+
+
+
+
+/* ********Topicos********* */
+
+
+
+.topicos {
+    background: var(--azul-fundo);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topicos-titulo {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.topicos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos-item {
+    margin: 1.2em 0.5em;
+    list-style-type: none;
+}
+
+.topicos-link {
+    color: var(--branco);
+    padding: 1em 2em;
+    border: 1px solid var(--verde-topicos);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.topicos-link:hover {
+    background-color: rgba(127, 150, 255, 0.137);
+}
+
+
+
+
+
+/* ****footer**** */
+
+
+
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--azul-preto);
+    padding: 1em;
+    color: var(--branco);
+    text-align: center;
+
+}
+
+.rodape-titulo {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contato-titulo {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-item {
+    align-items: center;
+    text-decoration: none;
+    color: var(--branco);
+    display: flex;
+    margin: 0 1em 1em 0;
+    transition: 0.7s;
+}
+
+.redes-item:hover {
+    transform: scale(1.1);
+    color: var(--verde-topicos);
+}
+
+.redes-item-logo {
+    width: 2em;
+    margin: 0.5em 1em;
+}
